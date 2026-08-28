@@ -1,0 +1,85 @@
+.how-it-works {
+  width: 100%;
+  padding: 28px 24px 32px;
+  color: #f5f5f5;
+  background: #0b0f19;
+  border-bottom: 1px solid rgba(169, 175, 189, 0.16);
+}
+
+.how-title {
+  max-width: 1200px;
+  margin: 0 auto 22px;
+  color: #ffb52e;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-card {
+  position: relative;
+  min-height: 178px;
+  padding: 20px 22px;
+  background: #111827;
+  border: 1px solid rgba(169, 175, 189, 0.14);
+  border-radius: 12px;
+}
+
+.step-number {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  color: #6f7889;
+  font: 700 12px Arial, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.step-icon {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  background: rgba(255, 181, 46, 0.14);
+  border-radius: 10px;
+  font-size: 21px;
+}
+
+.step-card h3 {
+  margin: 0 0 8px;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.step-card p {
+  max-width: 30rem;
+  margin: 0;
+  color: #a9afbd;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .how-it-works {
+    padding: 22px 15px 24px;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    min-height: 0;
+  }
+}

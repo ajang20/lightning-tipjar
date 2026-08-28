@@ -1,0 +1,53 @@
+.footer {
+  width: 100%;
+  padding: 20px 24px;
+  background: #0d1320;
+  color: #a9afbd;
+  border-top: 1px solid rgba(169, 175, 189, 0.16);
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.lightning-icon {
+  color: #ffb52e;
+  font-size: 18px;
+}
+
+.separator {
+  margin: 0 6px;
+  color: #704b19;
+}
+
+.bitcoin-text {
+  color: #f5a623;
+  font-weight: 600;
+}
+
+.mobile-money-text {
+  color: #7ec8a4;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 16px;
+  }
+
+  .footer-content {
+    gap: 5px;
+    font-size: 12px;
+  }
+}
