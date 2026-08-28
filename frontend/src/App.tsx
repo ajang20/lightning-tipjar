@@ -1,13 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from "./pages/Home";
+import TipSuccess from "./pages/Success";
+import NotFound from "./pages/NotFound"
 
 function App() {
- 
-
   return (
-    <div className="text-4xl font-bold text-blue-700 flex items-center justify-center h-screen">
-      Hello World!
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/tip/success" element={<TipSuccess />} />
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
